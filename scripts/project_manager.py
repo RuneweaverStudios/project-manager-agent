@@ -60,10 +60,10 @@ def is_subagent(session_key):
 
 
 def session_age_ms(session):
-    """Calculate age in milliseconds based on updatedAt."""
+    """Calculate age in milliseconds based on updatedAt. Returns 0 if updatedAt is missing."""
     updated_at = session.get("updatedAt")
     if not updated_at:
-        return None
+        return 0
     now_ms = int(time.time() * 1000)
     return now_ms - updated_at
 

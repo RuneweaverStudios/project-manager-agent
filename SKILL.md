@@ -1,5 +1,7 @@
 ---
 name: project-manager-agent
+displayName: Project Manager Agent
+version: 1.0.0
 description: Monitors active sub-agents, detects stalls, provides status updates, and steers stuck agents via sessions_send.
 ---
 
@@ -96,4 +98,3 @@ This skill is ideal for a cron job, running periodically (e.g., every 5 minutes)
 ```
 
 ---
-version: 0.2.0

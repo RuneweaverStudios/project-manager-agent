@@ -1,0 +1,7 @@
+{
+  "staleness_threshold_minutes": 10,
+  "steer_cooldown_minutes": 15,
+  "steer_message": "Please continue working on your task.",
+  "max_steer_per_run": 5,
+  "session_key_prefix": "agent:main:subagent:"
+}
