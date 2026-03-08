@@ -21,7 +21,7 @@ When the user or a cron asks you to run the project-manager-agent skill:
 
 1. **Run the script with `--json`** (and existing args as needed):
    ```bash
-   python3 /Users/ghost/.openclaw/workspace/skills/project-manager-agent/scripts/project_manager.py --json --staleness_threshold_minutes 10
+   python3 ~/.openclaw/workspace/skills/project-manager-agent/scripts/project_manager.py --json --staleness_threshold_minutes 10
    ```
 2. **Parse the script stdout**: The last line is a single JSON object with `stalledSessionKeys`, `steerMessage`, and `summary`. Parse it (e.g. take the last line that starts with `{` and ends with `}`).
 3. **If `stalledSessionKeys` is non-empty**:
@@ -53,13 +53,13 @@ python3 <skill-dir>/scripts/project_manager.py
 ### Example (Status check, human-only)
 
 ```bash
-python3 /Users/ghost/.openclaw/workspace/skills/project-manager-agent/scripts/project_manager.py --staleness_threshold_minutes 15
+python3 ~/.openclaw/workspace/skills/project-manager-agent/scripts/project_manager.py --staleness_threshold_minutes 15
 ```
 
 ### Example (Agent run with steering)
 
 ```bash
-python3 /Users/ghost/.openclaw/workspace/skills/project-manager-agent/scripts/project_manager.py --json --staleness_threshold_minutes 10
+python3 ~/.openclaw/workspace/skills/project-manager-agent/scripts/project_manager.py --json --staleness_threshold_minutes 10
 ```
 
 Then parse the last line (JSON), call sessions_send for each key in `stalledSessionKeys`, and optionally run `--record-steered <keys>`.
