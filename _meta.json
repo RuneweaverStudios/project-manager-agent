@@ -2,7 +2,7 @@
   "schema": "openclaw.skill.v1",
   "slug": "project-manager-agent",
   "name": "project-manager-agent",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "Project Manager Agent",
   "description": "Monitors active sub-agents, detects stalls, and provides status updates. Can be configured to automatically steer stuck agents.",
   "author": "RuneweaverStudios",
@@ -13,5 +13,5 @@
     "project-management"
   ],
   "platform": "openclaw",
-  "ownerId": "your-openclaw-user-id"
+  "ownerId": "RuneweaverStudios"
 }
